@@ -54,13 +54,13 @@
 					}
 				},
 				"url": {
-					"raw": "localhost:8004/users/create",
+					"raw": "localhost:8004/medicos/create",
 					"host": [
 						"localhost"
 					],
 					"port": "8004",
 					"path": [
-						"users",
+						"medicos",
 						"create"
 					]
 				},
@@ -83,13 +83,13 @@
 					}
 				},
 				"url": {
-					"raw": "localhost:8004/users/update/1",
+					"raw": "localhost:8004/medicos/update/1",
 					"host": [
 						"localhost"
 					],
 					"port": "8004",
 					"path": [
-						"users",
+						"medicos",
 						"update",
 						"1"
 					]
@@ -113,13 +113,13 @@
 					}
 				},
 				"url": {
-					"raw": "localhost:8004/users/delete/1",
+					"raw": "localhost:8004/medicos/delete/1",
 					"host": [
 						"localhost"
 					],
 					"port": "8004",
 					"path": [
-						"users",
+						"medicos",
 						"delete",
 						"1"
 					]
@@ -146,13 +146,13 @@
 					}
 				},
 				"url": {
-					"raw": "localhost:8004/users/read/1",
+					"raw": "localhost:8004/medicos/read/1",
 					"host": [
 						"localhost"
 					],
 					"port": "8004",
 					"path": [
-						"users",
+						"medicos",
 						"read",
 						"1"
 					]
@@ -179,13 +179,13 @@
 					}
 				},
 				"url": {
-					"raw": "localhost:8004/users/readcpf/12345678910",
+					"raw": "localhost:8004/medicos/readcpf/12345678910",
 					"host": [
 						"localhost"
 					],
 					"port": "8004",
 					"path": [
-						"users",
+						"medicos",
 						"readcpf",
 						"12345678910"
 					]
