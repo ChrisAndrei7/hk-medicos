@@ -41,7 +41,7 @@ Disponibilizamos uma collection do postman para ajudar na utilização, contendo
 Relatório RIPD gerado se encontra junto com todos os outros documentos do projeto dentro do projeto, na pasta pasta **appMedicos/Documentos**, com nome **H&MSystem - RIPD**.
 
 # :clipboard: Relatórios OWASP ZAP
-:construction: Em construção :construction:
+O relatório de segurança OWASP ZAP referente ao microsserviço hk-medicos está localizado na pasta **appMedicos/Documentos**, com nome **Relatórios OWASP ZAP - hk-medicos**.
 
 # :test_tube: Testes
 Para executar os testes, localizados dentro da pasta "feature", deve ser processado o comando behave abaixo após aplicação estar no ar.
