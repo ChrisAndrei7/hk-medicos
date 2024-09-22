@@ -5,7 +5,7 @@
 		"description": "Projeto criado para atender a demanda de uma operadora de saúde através de um sistema de agendamento de consultas.",
 		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
 		"_exporter_id": "33097875",
-		"_collection_link": "https://winter-desert-869279.postman.co/workspace/bf09e259-9dfb-40ec-823b-a85d2a12f07a/collection/33097875-743330cb-7446-4af5-884d-88ff0c3b8c9e?action=share&source=collection_link&creator=33097875"
+		"_collection_link": "https://winter-desert-869279.postman.co/workspace/My-Workspace~bf09e259-9dfb-40ec-823b-a85d2a12f07a/collection/33097875-743330cb-7446-4af5-884d-88ff0c3b8c9e?action=share&source=collection_link&creator=33097875"
 	},
 	"item": [
 		{
@@ -46,7 +46,36 @@
 				"header": [],
 				"body": {
 					"mode": "raw",
-					"raw": "{\r\n    \"name\": \"Primeiro Doutor\",\r\n    \"cpf\": \"12345678910\",\r\n    \"crm\": \"112233\",\r\n    \"email\": \"ba@ba.com.br\",\r\n    \"senha\": \"1!med@system\"\r\n}",
+					"raw": "{\r\n    \"name\": \"Daniel Oliveira\",\r\n    \"cpf\": \"12345678910\",\r\n    \"crm\": \"112233\",\r\n    \"email\": \"ba@ba.com.br\",\r\n    \"senha\": \"1!med@system\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8004/medicos/create",
+					"host": [
+						"localhost"
+					],
+					"port": "8004",
+					"path": [
+						"medicos",
+						"create"
+					]
+				},
+				"description": "API para cadastrar novos médicos, necessário informar os 5 dados abaixo:\n\n- nome\n    \n- cpf\n    \n- crm\n    \n- email\n    \n- senha"
+			},
+			"response": []
+		},
+		{
+			"name": "Criar medico 2",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"name\": \"Jose da Silva\",\r\n    \"cpf\": \"65234603040\",\r\n    \"crm\": \"112233\",\r\n    \"email\": \"ba@ba.com.br\",\r\n    \"senha\": \"1!med@system\"\r\n}",
 					"options": {
 						"raw": {
 							"language": "json"
@@ -75,7 +104,7 @@
 				"header": [],
 				"body": {
 					"mode": "raw",
-					"raw": "{\r\n    \"id\": \"2\",\r\n    \"name\": \"Primeiro Doutor\",\r\n    \"cpf\": \"12345678910\",\r\n    \"crm\": \"112233\",\r\n    \"email\": \"ba@ba.com.br\",\r\n    \"senha\": \"1!med@system\"\r\n}",
+					"raw": "{\r\n    \"id\": \"1\",\r\n    \"name\": \"Daniel Oliveira\",\r\n    \"cpf\": \"12345678910\",\r\n    \"crm\": \"112233\",\r\n    \"email\": \"ZT@ZT.com.br\",\r\n    \"senha\": \"1!med@system\"\r\n}",
 					"options": {
 						"raw": {
 							"language": "json"
@@ -95,36 +124,6 @@
 					]
 				},
 				"description": "API para atualizar médicos cadastrados, necessário informar os 6 dados abaixo:\n\n- id\n    \n- nome\n    \n- cpf\n    \n- crm\n    \n- email\n    \n- senha"
-			},
-			"response": []
-		},
-		{
-			"name": "Deletar medico",
-			"request": {
-				"method": "DELETE",
-				"header": [],
-				"body": {
-					"mode": "raw",
-					"raw": "",
-					"options": {
-						"raw": {
-							"language": "json"
-						}
-					}
-				},
-				"url": {
-					"raw": "localhost:8004/medicos/delete/1",
-					"host": [
-						"localhost"
-					],
-					"port": "8004",
-					"path": [
-						"medicos",
-						"delete",
-						"1"
-					]
-				},
-				"description": "API para deletar um médico cadastrado, necessário informar o id do usuário no endpoint."
 			},
 			"response": []
 		},
@@ -191,6 +190,36 @@
 					]
 				},
 				"description": "API para consultar médicos cadastrados, filtrando pelo CPF. Necessário informar o CPF no final do endpoint."
+			},
+			"response": []
+		},
+		{
+			"name": "Deletar medico",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8004/medicos/delete/1",
+					"host": [
+						"localhost"
+					],
+					"port": "8004",
+					"path": [
+						"medicos",
+						"delete",
+						"1"
+					]
+				},
+				"description": "API para deletar um médico cadastrado, necessário informar o id do usuário no endpoint."
 			},
 			"response": []
 		}
